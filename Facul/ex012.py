@@ -1,0 +1,1 @@
+# equação do segundo grau :(
