@@ -11,8 +11,8 @@ b = int(input("Insira o coeficiente 'b': "))
 c = int(input("Insira o coeficiente 'c': "))
 
 delta = (b**2) - 4 * a * c
-x = (-(b) + sqrt(delta)) / 2
-x2 = (-(b) - sqrt(delta)) / 2
+x = (-(b) + sqrt(delta)) / (2 * a)
+x2 = (-(b) - sqrt(delta)) / (2 * a)
 
 if (a == 0):
     print('Não é equação do segundo grau')
