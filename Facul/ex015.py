@@ -26,10 +26,9 @@ vel_veiculo = float(input('Velocidade do veículo: '))
 a = vel_veiculo - vel_max
 pctg = (a * 100) / vel_max
 
-
 if pctg <= 20:
     print('Você irá receber uma multa de R$: 85.13 \nperdeu 4 pontos na carteira.')
-elif pctg >= 21 or pctg <=50:
+elif pctg >= 21 and pctg <=50:
     print('Você irá receber uma multa de R$: 127.69 \nperdeu 5 pontos na carteira.')
 elif pctg > 51:
     print('Você irá receber uma multa de R$: 574.62 \nperdeu 7 pontos na carteira, apreensão da carteira e suspensão do direito de dirigir ')
