@@ -20,28 +20,28 @@ qntdd = int(input('Digite a quantidade comprada: '))
 if cod == 1:
     total = qntdd * 5.30
     if qntdd >= 15 and total >= 40:
-        desconto = 5.30 * (15 / 100)
+        desconto = total * (15 / 100)
         print(f'O total a pagar com o desconto será de R$: {total - desconto:.2f}')
     else:
         print(f'O total a pagar será de R$: {total:.2f}')
 elif cod == 2:
     total = qntdd * 6
     if qntdd >= 15 and total >= 40:
-        desconto = 6 * (15 / 100)
+        desconto = total * (15 / 100)
         print(f'O total a pagar com o desconto será de R$: {total - desconto:.2f}')
     else:
         print(f'O total a pagar será de R$: {total:.2f}')
 elif cod == 3:
     total = qntdd * 3.20
     if qntdd >= 15 and total >= 40:
-        desconto = 3.20 * (15 / 100)
+        desconto = total * (15 / 100)
         print(f'O total a pagar com o desconto será de R$: {total - desconto:.2f}')
     else:
         print(f'O total a pagar será de R$: {total:.2f}')
 elif cod == 4:
     total = qntdd * 2.50
     if qntdd >= 15 and total >= 40:
-        desconto = 2.50 * (15 / 100)
+        desconto = total * (15 / 100)
         print(f'O total a pagar com o desconto será de R$: {total - desconto:.2f}')
     else:
         print(f'O total a pagar será de R$: {total:.2f}')
