@@ -11,11 +11,12 @@ os.system('cls')
 
 
 
-i = 0
 num = int(input('Digite um número: '))
-while (i < num):
-    i+=1
+i = num - 1
+soma = 0
+while (i >= 1):
     if (num % i == 0):
-        soma = i + i
-        print(f'Divisores: {i}')
-        print(f'Soma: {i} + {i} = {soma} \n')
+        soma = soma + i
+        print(i)
+    i = i - 1
+print(soma)
