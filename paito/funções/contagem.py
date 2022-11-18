@@ -12,38 +12,35 @@ from time import sleep
 os.system('cls')
 
 
-def linhas():
-    print('-='*15)
-    
+def contador(i, f, p):
+    if p < 0:
+        p *= -1
+    if p == 0:
+        p = 1
+    print('-=' * 20)
+    print(f'Contagem de {i} até {f} de {p} em {p}')
+    sleep(0.5)
 
+    if i < f:
+        cont = i
+        while cont <= f:
+            print(f'{cont} ', end='', flush=True)
+            sleep(0.5)
+            cont += p
+        print('FIM!')
+    else:
+        cont = i
+        while cont >= f:
+            print(f'{cont} ', end='', flush=True)
+            sleep(0.5)
+            cont -= p
+        print('FIM!')
 
-
-def contador(a, b, c):
-    for conta in range(a, b+1, c):
-        print(conta)
-        sleep(0.5)
-        
-
-
-linhas()
-print('Contagem de 1 até 10 de 1 em 1: ')
 contador(1, 10, 1)
-linhas()
-
-print('Contagem de 10 até 0 de 2 em 2: ')
-contador(10, -2, -2)
-linhas()
-
-
-print('Agora é a sua vez: ')
-n1 = int(input('Insira o valor do começo da contagem: '))
-n2 = int(input('Insira o valor do fim da contagem: '))
-n3 = int(input('Insira o passo da contagem: '))
-
-if n1 > 0 and n2 < 0:
-    n2 = n2 + (-2)
-if n3 == 0:
-    n3 = -1
-
-contador(n1, n2, n3)
-linhas()
+contador(10, 0, 2)
+print('-=' * 20)
+print('Agora é a sua vez de personalizar a contagme!')
+ini = int(input('ínicio: '))
+fim = int(input('Fim: '))
+pas = int(input('Passo: '))
+contador(ini, fim, pas)
