@@ -1,4 +1,4 @@
-'''galera = [['Victor', 18], ['Sylvia', 15], ['Gaspar', 3], ['Arrascaeta', 28]]
+'''galera = [['Victor', 18], ['Viviane', 15], ['Gaspar', 3], ['Arrascaeta', 28]]
 for p in galera:
     print(f'{p[0]} tem {p[1]} anos de idade')'''
 
