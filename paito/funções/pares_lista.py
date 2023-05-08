@@ -11,7 +11,7 @@ cont = 1
 
 # Função pra sortear 5 númeroos em uma lista
 while cont <= 5:
-    sorteados.append(randint(0, 10)) 
+    sorteados.append(randint(0, 10))
     cont+=1
 
 def sorteia():
